@@ -12,7 +12,7 @@ function mdTablePagination() {
     var self = this;
 
     $scope.$watch(function() {
-      return $scope.$parent.table.deferred.$$state.pending
+      return $scope.$parent.table.deferred.$$state.pending;
     }, function(oldValue, newValue) {
       self.loading = newValue;
     });
