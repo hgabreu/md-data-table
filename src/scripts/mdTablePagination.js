@@ -13,8 +13,8 @@ function mdTablePagination() {
 
     $scope.$watch(function() {
       return $scope.$parent.table.deferred.$$state.pending
-    }, function(old, new) {
-      self.loading = new;
+    }, function(oldValue, newValue) {
+      self.loading = newValue;
     });
 
     self.$label = angular.extend({
