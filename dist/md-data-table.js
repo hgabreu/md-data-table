@@ -1263,7 +1263,7 @@ function mdTablePagination() {
 
     $scope.$watch(function() {
       return $scope.$parent.table.deferred.$$state.pending;
-    }, function(oldValue, newValue) {
+    }, function(newValue, oldValue) {
       self.loading = newValue;
     });
 
